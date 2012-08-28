@@ -1,7 +1,7 @@
-######################################
-# This SLS is for managing herlo.org #
-# and sexysexypenguins.org           #
-######################################
+SSP Salt State Tree
+===================
+
+This is the state tree for managing herlo.org and sexysexypenguins.org
 
 This README will likely be expanded over time. But represents the 
 salt state to manage the system. It is my hope to document each
