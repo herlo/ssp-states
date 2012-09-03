@@ -1,0 +1,10 @@
+# You must set some working options before the "spawn-fcgi" service will work.
+# If SOCKET points to a file, then this file is cleaned up by the init script.
+#
+# See spawn-fcgi(1) for all possible options.
+#
+# Example :
+#SOCKET=/var/run/php-fcgi.sock
+OPTIONS="-a 127.0.0.1 -p 9000 -C 6 -u nginx -g nginx -S -M 0600 -C 32 -F 1 -P /var/run/spawn-fcgi.pid -- /usr/bin/php-cgi"
+#/usr/bin/spawn-fcgi -a 127.0.0.1 -p 9000 -C 6 -u nginx -g nginx -f /usr/bin/php-cgi
+
