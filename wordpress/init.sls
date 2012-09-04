@@ -14,15 +14,18 @@ wordpress:
       - service: mysql-server
 
 wordpress_db:
-  mysql_database.present:
+  mysql_database:
+    - present
     - name: WORDPRESS
     - require:
       - service: mysql-server
-  mysql_user.present:
+  mysql_user:
+    - present
     - name: wp_user
-   mysql_grants.present:
+  mysql_grants.present:
     - grant: all
     - database: WORDPRESS.*
     - user: wp_user
     - host: localhost
+
 
