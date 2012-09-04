@@ -4,3 +4,4 @@ base:
     - nginx
     - websites
     - fastcgi
+    - wordpress

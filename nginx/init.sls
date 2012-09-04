@@ -20,3 +20,5 @@ nginx:
   service.running:
     - require:
       - pkg: nginx
+    - watch:
+      - file: wordpress
