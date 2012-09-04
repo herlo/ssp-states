@@ -4,4 +4,5 @@ base:
     - nginx
     - websites
     - fastcgi
+    - mysql
     - wordpress

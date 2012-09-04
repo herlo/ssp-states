@@ -18,6 +18,7 @@ nginx:
     - require:
       - user: nginx
   service.running:
+    - enable: True
     - require:
       - pkg: nginx
     - watch:
