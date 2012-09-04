@@ -13,6 +13,18 @@ wordpress:
       - pkg: wordpress
       - service: mysql-server
 
+wp_uploads_dir:
+  file.directory:
+    - name: /usr/share/wordpress/wp-content/uploads
+    - user: nginx
+    - group: nginx
+    - mode: 2755
+    - recurse:
+      - user
+      - group
+    - require:
+      - pkg: wordpress
+
 wordpress_db:
   mysql_database:
     - present
