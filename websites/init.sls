@@ -14,7 +14,7 @@ extend:
 # the wp-config.php found in the wordpress/init.sls
 # needs to be updated to include a config to check
 # the 'HTTP_HOST' value and load this configuration
-# file upon a match to (www,).sexysexypenguins.com. 
+# file upon a match to (www,).sexysexypenguins.com.
 
 ssp_wp_conf:
   file.managed:
