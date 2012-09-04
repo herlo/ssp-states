@@ -19,16 +19,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'WORDPRESS');
+define('DB_NAME', '{{ db_name }}');
 
 /** MySQL database username */
-define('DB_USER', 'wp_user');
+define('DB_USER', '{{ db_user }}');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'password');
+define('DB_PASSWORD', '{{ db_password }}');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '{{ db_host }}');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  * @since 2.6.0
  */
 
-define('AUTH_KEY',         'Z csN9,MJH)?T2F&T7USB;nfZ[};k]lDWX?;>NFI$osiu@zsN5.,]p-1>&(?ydy3');
-define('SECURE_AUTH_KEY',  'BY|Q?%hGh1iv$eDbyi#^vj3R;G$!^PWfh|)K+,p4(^t|@%WtThL#{6&P]Kh@X6MD');
-define('LOGGED_IN_KEY',    'wAY`|(sM arxO03PI[Y%+]xYsUp-RA,S58=Ys>vVm8<3#zgLGRLI|7`D}.9[dZc_');
-define('NONCE_KEY',        'D>+!lMyLR!_G|JA9[voFHLeq: D+IYPH&A>M)b+#y+e5|/w:EPG;I=wwvMeRG6C=');
-define('AUTH_SALT',        'oDo-g-T`lxL9bN@d/TS1K#KK{G/#D&Kz:r[3tcFo*sQqshnQl{JnK<e[P$sbMTAQ');
-define('SECURE_AUTH_SALT', '__Vry+RU/r{9-dXaxxSz6p6FvpeT;e.S4Yt/PE$JC|,x_LMG(.Kg|BKtEu=8`!/{');
-define('LOGGED_IN_SALT',   ']A)rL<zg+oVh$UD]Y5D_*B>>=]c<tKoNR-SJjzB-t+X>aX,NUmxMbWxj}OLUrK*@');
-define('NONCE_SALT',       'g~u-!X1~stE@-pfTD}`!V-yEo76%)h3_X?02?QHo]Q&RTR-w2W7F}V^ ^#{$,zbu');
+define('AUTH_KEY',         '{{ db_auth_key }}');
+define('SECURE_AUTH_KEY',  '{{ db_secure_auth_key }}');
+define('LOGGED_IN_KEY',    '{{ db_logged_in_key }}');
+define('NONCE_KEY',        '{{ db_nonce_key }}');
+define('AUTH_SALT',        '{{ db_auth_salt }}');
+define('SECURE_AUTH_SALT', '{{ db_secure_auth_salt }}');
+define('LOGGED_IN_SALT',   '{{ db_logged_in_salt }}');
+define('NONCE_SALT',       '{{ db_nonce_salt }}');
 
 /**#@-*/
 
@@ -63,7 +63,7 @@ define('NONCE_SALT',       'g~u-!X1~stE@-pfTD}`!V-yEo76%)h3_X?02?QHo]Q&RTR-w2W7F
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_ssp_';
+$table_prefix  = '{{ db_table_prefix }}';
 
 /**
  * WordPress Localized Language, defaults to English.

@@ -19,13 +19,5 @@ wordpress_db:
     - name: WORDPRESS
     - require:
       - service: mysql-server
-  mysql_user:
-    - present
-    - name: wp_user
-  mysql_grants.present:
-    - grant: all
-    - database: WORDPRESS.*
-    - user: wp_user
-    - host: localhost
 
 
